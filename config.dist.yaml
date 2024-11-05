@@ -1,0 +1,30 @@
+openai:
+    token: OPENAI_TOKEN
+
+zendesk:
+    email: YOUR_ZENDESK_ACCOUNT_EMAIL
+    domain: YOUR_ZENDESK_DOMAIN
+    token: ZENDESK_TOKEN
+
+prompt:
+    # The base OpenAI prompt to use.
+    base: |
+        Please categorize the following TICKET using the following tags:
+
+    # The tags to use for the prompt.
+    tags:
+        - name: Billing
+          description: Ticket content is related to Billing questions.
+
+        - name: Technical
+          description: Ticket content is related to Technical questions.
+
+    # The footer of the prompt, controls the output format.
+    footer: |
+        Respond with a JSON object containing the array of tag names that apply
+        to the ticket.
+
+        For example:
+        {
+            "tags": ["TAG1", "TAG2"]
+        }
