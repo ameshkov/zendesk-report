@@ -14,8 +14,8 @@
             "program": "${workspaceFolder}/src/index.js",
             "env": {
                 "CONFIG_FILE": "config.yaml",
-                "START_DATE": "2024-11-01",
-                "END_DATE": "2024-11-02",
+                "START_DATE": "2024-10-30",
+                "END_DATE": "2024-11-05",
                 "OUTPUT": "output.csv",
                 "LIMIT": "10",
             }
